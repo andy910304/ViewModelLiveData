@@ -1,4 +1,4 @@
-package com.example.viewmodellivedata.viewmodel;
+package com.example.viewmodellivedata;
 
 public class Sumar {
 

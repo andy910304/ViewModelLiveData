@@ -11,7 +11,7 @@ import com.example.viewmodellivedata.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btViewModel;
+    private Button btViewModel, btViewModelUserActivity, btLiveDataActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),ViewModelSumarActivity.class));
+            }
+        });
+
+        btViewModelUserActivity = findViewById(R.id.mainActivityBtViewModelUser);
+        btViewModelUserActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),ViewModelUserActivity.class));
+            }
+        });
+
+        btLiveDataActivity = findViewById(R.id.mainActivityBtLiveData);
+        btLiveDataActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LiveDataActivity.class));
             }
         });
     }

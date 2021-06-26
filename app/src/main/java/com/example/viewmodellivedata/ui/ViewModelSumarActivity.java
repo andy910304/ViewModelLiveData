@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.viewmodellivedata.R;
-import com.example.viewmodellivedata.viewmodel.Sumar;
+import com.example.viewmodellivedata.Sumar;
 import com.example.viewmodellivedata.viewmodel.SumarViewModel;
 
 public class ViewModelSumarActivity extends AppCompatActivity {
